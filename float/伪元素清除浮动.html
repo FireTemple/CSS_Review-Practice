@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+
+        .box1 > p{
+            color: black;
+            float: left;
+        }
+
+        .box2 > p{
+            color: pink;
+            float: left;
+        }
+
+        .box1::after{
+            height: 0;
+            content: "";
+            clear: both;
+            visibility: hidden;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>内容</p>
+    <p>内容</p>
+    <p>内容</p>
+</div>
+
+<div class="box2">
+    <p>内容</p>
+    <p>内容</p>
+    <p>内容</p>
+</div>
+</body>
+</html>
